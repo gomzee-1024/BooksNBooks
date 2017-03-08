@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.gautam.booksnbooks.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <me.henrytao.smoothappbarlayout.SmoothAppBarLayout
+        android:id="@+id/smooth_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/transparentColor"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:background="@color/transparentColor"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:elevation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+            <LinearLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+                android:background="@color/transparentColor"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="202.5dp"
+                    android:src="@drawable/banner"
+                    android:scaleType="fitXY"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@color/transparentColor" />
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/transparentColor"
+                android:fitsSystemWindows="true"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin"
+                app:elevation="0dp"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_margin="12dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Search Loans"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_margin="12dp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </me.henrytao.smoothappbarlayout.SmoothAppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
