@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
-    android:layout_gravity="fill_vertical"
-    app:behavior_overlapTop="60dp">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_gravity="fill_vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/backgroundColor"
         android:orientation="vertical">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="200dp"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -24,7 +19,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="8dp"
             android:text="TRENDING"
-            android:gravity="center_horizontal"/>
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:alpha="0.87"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -60,7 +57,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:text="Study Books"
-            android:background="@drawable/trending_books_title_bg"
+            android:background="@drawable/trending_books_title_bg_2"
             android:textColor="@android:color/white"/>
 
         <android.support.v7.widget.RecyclerView
@@ -72,6 +69,10 @@
             android:layout_marginBottom="8dp">
         </android.support.v7.widget.RecyclerView>
 
+        <Button
+            android:id="@+id/bag_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
         <View
             android:layout_width="match_parent"
             android:layout_height="240dp"/>

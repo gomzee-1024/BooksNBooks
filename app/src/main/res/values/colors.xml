@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#FFA000</color>
-    <color name="backgroundColor">#FAFAFA</color>
+    <color name="backgroundColor">#303030</color>
+    <color name="cardColor">#424242</color>
     <color name="transparentColor">#00FFFFFF</color>
     <color name="translucentBlack">#99000000</color>
     <color name="priceColor">#D50000</color>
+    <color name="coupon_code_bg_color">#FFC400</color>
+    <color name="coupon_code_bg_color_2">#558B2F</color>
 </resources>

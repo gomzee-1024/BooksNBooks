@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BooksNBooks</string>
+    <string name="synopsis">Harry Potter and the Deathly Hallows plays thoughtfully upon the standard Harry Potter formula that we\'ve all gotten used to over the course of the last six books – we begin with a menacing taste of what\'s to come (this time with a glimpse of what Voldemort and his Death Eaters are up to), find ourselves at Privet Drive at the end of the summer, and then make our way to Hogwarts. However, this version of the trajectory is thwarted at every point, as Rowling throws in curveball after curveball, shaking up all of our expectations.</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
 </resources>
